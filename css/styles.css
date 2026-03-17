@@ -153,7 +153,7 @@ picture {
         max-width: 81vw;
     }
 
-    section {
+    section, article {
         padding: var(--space-400);
         border-radius: var(--space-100);
         display: flex;
