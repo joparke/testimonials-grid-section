@@ -41,7 +41,7 @@ button, input, label {
 /* Balance text wrapping on headings */
 h1, h2,
 h3, h4 {
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 /* A elements that don't have a class get default styles */
@@ -101,7 +101,7 @@ picture {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: var(--space-900);
+    gap: var(--space-200);
     }
   
   p {
@@ -160,12 +160,61 @@ picture {
         flex-direction: column;
         gap: var(--space-200);
         box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+        background-color: var(--white);
+        color: var(--gray-500);
+
+        & span, p {
+            color: var(--gray-400);
+        }
+
+        &.purple {
+            background-color: var(--purple-500);
+            color: var(--white);
+
+            & figure img {
+                border: 2px solid rgba(255,255,255,0.3);
+                box-sizing: content-box;
+            }
+
+            & span, p {
+            color: var(--purple-50);
+            }
+        }
+
+         &.gray {
+            background-color: var(--gray-500);
+            color: var(--white);
+
+            & span, p {
+            color: var(--gray-100);
+            }
+        }
+
+         &.dark-blue {
+            background-color: var(--dark-blue);
+            color: var(--gray-200);
+
+            & figure img {
+                border: 2px solid var(--purple-500);
+                box-sizing: content-box;
+            }
+
+            & span, figcaption {
+            color: var(--white);
+            }
+
+            & p {
+            color: var(--gray-100);
+            }
+
+            & h1 {
+            color: var(--gray-200);
+            }
+        }
     }
 
 
     .testimonial-1 {
-      background-color: var(--purple-500);
-      color: var(--white);
       position: relative;
       isolation: isolate;
       overflow: hidden;
@@ -190,26 +239,6 @@ picture {
       z-index: 1;
     }
 
-     .testimonial-2 {
-      background-color: var(--gray-500);
-      color: var(--white);
-    }
-
-     .testimonial-3 {
-      background-color: var(--white);
-      color: var(--gray-500);
-    }
-
-     .testimonial-4 {
-      background-color: var(--dark-blue);
-        color: var(--gray-200);
-    }
-
-     .testimonial-5 {
-      background-color: var(--white);
-        color: var(--gray-500);
-    }
-
     figure {
         display: flex;
         flex-direction: row;
@@ -222,11 +251,9 @@ picture {
         aspect-ratio: 1 / 1;
         border-radius: 50%;
         object-fit: cover;
-        border: 2px solid rgba(255,255,255,0.3);
     } 
 
    figcaption {
-       /*  font-weight: 800; */
         font-style: normal;
         display: flex;
         flex-direction: column;
