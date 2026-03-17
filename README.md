@@ -17,7 +17,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ### Links
 
 - Repo URL: [https://github.com/joparke/testimonials-grid-section](https://github.com/joparke/testimonials-grid-section)
-- Live Site URL: [https://joparke.github.io/QR-code-component/)](https://joparke.github.io/QR-code-component/)
+- Live Site URL: [https://joparke.github.io/testimonials-grid-section/)](https://joparke.github.io/testimonials-grid-section/)
 
 ### Built with
 
